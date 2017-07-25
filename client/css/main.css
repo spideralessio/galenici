@@ -1,0 +1,30 @@
+body {
+	background: 
+		linear-gradient(
+		    rgba(0, 0, 0, 0.4), 
+		    rgba(0, 0, 0, 0.4)
+		),
+		url('../imgs/bkg.jpg');
+	background-size: 120%;
+}
+
+nav, footer {
+	background: 
+		linear-gradient(
+		    rgba(0, 0, 0, 0.2), 
+		    rgba(0, 0, 0, 0.2)
+		)
+}
+
+h2 {
+    font-weight: 300;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.input-field input.autocomplete {
+	padding: 0 5px;
+}
