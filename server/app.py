@@ -3,6 +3,8 @@ from flask_restful import reqparse, abort, Api, Resource
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import models
+from flask_cors import CORS, cross_origin
+
 
 def row2dict(row):
     d = {}
@@ -12,6 +14,8 @@ def row2dict(row):
     return d
 
 app = Flask(__name__)
+CORS(app)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./app.db'
 
 
